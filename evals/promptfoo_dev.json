@@ -1,0 +1,1088 @@
+{
+  "evalId": "eval-OBO-2026-11-18T03:34:55",
+  "results": {
+    "version": 3,
+    "timestamp": "2026-11-18T03:34:55.809Z",
+    "prompts": [
+      {
+        "id": "d3bcaf71c11c2678899be04d872718325f0916b3b0705e805ee29930663a42e2",
+        "raw": "{{question}}",
+        "label": "{{question}}",
+        "provider": "assistant-v2",
+        "metrics": {
+          "score": 4.5,
+          "testPassCount": 4,
+          "testFailCount": 2,
+          "testErrorCount": 0,
+          "testCacheHitCount": 0,
+          "assertPassCount": 15,
+          "assertFailCount": 4,
+          "totalLatencyMs": 596515,
+          "tokenUsage": {
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "total": 0,
+            "numRequests": 6,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            },
+            "assertions": {
+              "total": 0,
+              "prompt": 0,
+              "completion": 0,
+              "cached": 0,
+              "numRequests": 0,
+              "completionDetails": {
+                "reasoning": 0,
+                "acceptedPrediction": 0,
+                "rejectedPrediction": 0,
+                "cacheReadInputTokens": 0,
+                "cacheCreationInputTokens": 0
+              }
+            }
+          },
+          "namedScores": {},
+          "namedScoresCount": {},
+          "namedScoreWeights": {},
+          "cost": 0
+        }
+      }
+    ],
+    "results": [
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "icontains",
+                "value": "j'irai"
+              }
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "icontains",
+                "value": "tu iras"
+              }
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "icontains",
+                "value": "il ira"
+              }
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "icontains",
+                "value": "nous irons"
+              }
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "icontains",
+                "value": "vous irez"
+              }
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "icontains",
+                "value": "ils iront"
+              }
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "not-icontains",
+                "value": "je ne trouve pas cette information"
+              }
+            }
+          ]
+        },
+        "id": "de039c3d-d6f9-41dd-a336-66c58e931c0e",
+        "latencyMs": 159689,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Conjugue aller au futur simple",
+          "label": "{{question}}",
+          "config": {}
+        },
+        "promptId": "d3bcaf71c11c2678899be04d872718325f0916b3b0705e805ee29930663a42e2",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://app/provider_promptfoo.py",
+          "label": "assistant-v2"
+        },
+        "response": {
+          "output": "J'irai, tu iras, il ira, nous irons, vous irez, ils iront [futur-simple-irreguliers.md]",
+          "metadata": {
+            "sources": [
+              "futur-simple-irreguliers.md",
+              "futur-simple-er.md",
+              "passe-simple.md"
+            ]
+          },
+          "cached": false
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "description": "d01 (conjugaison)",
+          "vars": {
+            "question": "Conjugue aller au futur simple"
+          },
+          "assert": [
+            {
+              "type": "icontains",
+              "value": "j'irai"
+            },
+            {
+              "type": "icontains",
+              "value": "tu iras"
+            },
+            {
+              "type": "icontains",
+              "value": "il ira"
+            },
+            {
+              "type": "icontains",
+              "value": "nous irons"
+            },
+            {
+              "type": "icontains",
+              "value": "vous irez"
+            },
+            {
+              "type": "icontains",
+              "value": "ils iront"
+            },
+            {
+              "type": "not-icontains",
+              "value": "je ne trouve pas cette information"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 0,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "question": "Conjugue aller au futur simple"
+        },
+        "metadata": {
+          "sources": [
+            "futur-simple-irreguliers.md",
+            "futur-simple-er.md",
+            "passe-simple.md"
+          ],
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "icontains",
+                "value": "cod"
+              }
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "icontains",
+                "value": "avant le verbe"
+              }
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "not-icontains",
+                "value": "je ne trouve pas cette information"
+              }
+            }
+          ]
+        },
+        "id": "575b4ba5-0bb6-4c01-9013-88eea3e3e5cf",
+        "latencyMs": 70118,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Comment accorder le participe passé avec avoir ?",
+          "label": "{{question}}",
+          "config": {}
+        },
+        "promptId": "d3bcaf71c11c2678899be04d872718325f0916b3b0705e805ee29930663a42e2",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://app/provider_promptfoo.py",
+          "label": "assistant-v2"
+        },
+        "response": {
+          "output": "Le participe passé s'accorde en genre et en nombre avec le complément d'objet direct (COD), seulement si le COD est placé avant le verbe. Sinon, il reste invariable. [accord-participe-passe-avoir.md]",
+          "metadata": {
+            "sources": [
+              "accord-participe-passe-avoir.md",
+              "accord-participe-passe-etre.md",
+              "participe-passe-pronominaux.md"
+            ]
+          },
+          "cached": false
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "description": "d02 (regle)",
+          "vars": {
+            "question": "Comment accorder le participe passé avec avoir ?"
+          },
+          "assert": [
+            {
+              "type": "icontains",
+              "value": "cod"
+            },
+            {
+              "type": "icontains",
+              "value": "avant le verbe"
+            },
+            {
+              "type": "not-icontains",
+              "value": "je ne trouve pas cette information"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 1,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "question": "Comment accorder le participe passé avec avoir ?"
+        },
+        "metadata": {
+          "sources": [
+            "accord-participe-passe-avoir.md",
+            "accord-participe-passe-etre.md",
+            "participe-passe-pronominaux.md"
+          ],
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0,
+        "error": "Expected output to contain \"il faut que\"",
+        "gradingResult": {
+          "pass": false,
+          "score": 0.5,
+          "reason": "Expected output to contain \"il faut que\"",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Expected output to contain \"il faut que\"",
+              "assertion": {
+                "type": "icontains",
+                "value": "il faut que"
+              }
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "not-icontains",
+                "value": "je ne trouve pas cette information"
+              }
+            }
+          ]
+        },
+        "id": "6f1e3bd9-fd75-453e-ad40-a65730bcb943",
+        "latencyMs": 188708,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Quand utilise-t-on le subjonctif ?",
+          "label": "{{question}}",
+          "config": {}
+        },
+        "promptId": "d3bcaf71c11c2678899be04d872718325f0916b3b0705e805ee29930663a42e2",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://app/provider_promptfoo.py",
+          "label": "assistant-v2"
+        },
+        "response": {
+          "output": "Le subjonctif est utilisé après les verbes qui expriment un doute, un incertitude, un souhait, une volonté, une obligation, une concession, une condition, une cause, un but, un résultat, un moyen, un temps, un lieu, un moyen, un instrument, un objet, un résultat, un but, un moyen, un temps, un lieu, un moyen, un instrument, un objet, un résultat, un but, un moyen, un temps, un lieu, un moyen, un instrument, un objet, un résultat, un but, un moyen, un temps, un lieu, un moyen, un instrument, un objet, un résultat, un but, un moyen, un temps, un lieu, un moyen, un instrument, un objet, un résultat, un but, un moyen, un temps, un lieu, un moyen, un instrument, un objet, un résultat, un but, un moyen, un temps, un lieu, un moyen, un instrument, un objet, un résultat, un but, un moyen, un temps, un lieu, un moyen, un instrument, un objet, un résultat, un but, un moyen, un temps, un lieu, un moyen, un instrument, un objet, un résultat, un but, un moyen, un temps, un lieu, un moyen, un instrument, un objet, un résultat, un but, un moyen, un temps, un lieu, un moyen, un instrument, un objet, un résultat, un but, un moyen, un temps, un lieu, un moyen, un instrument, un objet, un résultat, un but, un moyen, un temps, un lieu, un moyen, un instrument, un objet, un résultat, un but, un moyen, un temps, un lieu, un moyen, un instrument, un objet, un résultat, un but",
+          "metadata": {
+            "sources": [
+              "subjonctif-present.md",
+              "verbes-ger-cer.md",
+              "conditionnel-present.md"
+            ]
+          },
+          "cached": false
+        },
+        "score": 0.5,
+        "success": false,
+        "testCase": {
+          "description": "d03 (regle)",
+          "vars": {
+            "question": "Quand utilise-t-on le subjonctif ?"
+          },
+          "assert": [
+            {
+              "type": "icontains",
+              "value": "il faut que"
+            },
+            {
+              "type": "not-icontains",
+              "value": "je ne trouve pas cette information"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 2,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "question": "Quand utilise-t-on le subjonctif ?"
+        },
+        "metadata": {
+          "sources": [
+            "subjonctif-present.md",
+            "verbes-ger-cer.md",
+            "conditionnel-present.md"
+          ],
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 1
+      },
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "icontains",
+                "value": "mangeais"
+              }
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "icontains",
+                "value": "mangions"
+              }
+            },
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "not-icontains",
+                "value": "je ne trouve pas cette information"
+              }
+            }
+          ]
+        },
+        "id": "8f7d8c37-53f1-4542-88df-01dacd9933fe",
+        "latencyMs": 81335,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Écris le verbe manger à l'imparfait",
+          "label": "{{question}}",
+          "config": {}
+        },
+        "promptId": "d3bcaf71c11c2678899be04d872718325f0916b3b0705e805ee29930663a42e2",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://app/provider_promptfoo.py",
+          "label": "assistant-v2"
+        },
+        "response": {
+          "output": "Je trouve dans la fiche [imparfait.md] que pour le verbe manger, l'imparfait est : je mangeais, tu mangeais, il mangeait, nous mangions, vous mangiez, ils mangeaient.",
+          "metadata": {
+            "sources": [
+              "infinitif-ou-participe-passe.md",
+              "imparfait.md",
+              "verbes-ger-cer.md"
+            ]
+          },
+          "cached": false
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "description": "d04 (conjugaison)",
+          "vars": {
+            "question": "Écris le verbe manger à l'imparfait"
+          },
+          "assert": [
+            {
+              "type": "icontains",
+              "value": "mangeais"
+            },
+            {
+              "type": "icontains",
+              "value": "mangions"
+            },
+            {
+              "type": "not-icontains",
+              "value": "je ne trouve pas cette information"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 3,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "question": "Écris le verbe manger à l'imparfait"
+        },
+        "metadata": {
+          "sources": [
+            "infinitif-ou-participe-passe.md",
+            "imparfait.md",
+            "verbes-ger-cer.md"
+          ],
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      },
+      {
+        "cost": 0,
+        "error": "Expected output to not contain \"je ne trouve pas cette information\"",
+        "gradingResult": {
+          "pass": false,
+          "score": 0,
+          "reason": "Expected output to not contain \"je ne trouve pas cette information\"",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Expected output to contain \"vendre\"",
+              "assertion": {
+                "type": "icontains",
+                "value": "vendre"
+              }
+            },
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Expected output to contain \"vendu\"",
+              "assertion": {
+                "type": "icontains",
+                "value": "vendu"
+              }
+            },
+            {
+              "pass": false,
+              "score": 0,
+              "reason": "Expected output to not contain \"je ne trouve pas cette information\"",
+              "assertion": {
+                "type": "not-icontains",
+                "value": "je ne trouve pas cette information"
+              }
+            }
+          ]
+        },
+        "id": "b488c1af-0464-44c4-8ec9-9625a673363d",
+        "latencyMs": 45332,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Faut-il écrire parler ou parlé ?",
+          "label": "{{question}}",
+          "config": {}
+        },
+        "promptId": "d3bcaf71c11c2678899be04d872718325f0916b3b0705e805ee29930663a42e2",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://app/provider_promptfoo.py",
+          "label": "assistant-v2"
+        },
+        "response": {
+          "output": "Je ne trouve pas cette information dans mes fiches.",
+          "metadata": {
+            "sources": [
+              "infinitif-ou-participe-passe.md",
+              "imperatif.md",
+              "present-er.md"
+            ]
+          },
+          "cached": false
+        },
+        "score": 0,
+        "success": false,
+        "testCase": {
+          "description": "d05 (ambigu)",
+          "vars": {
+            "question": "Faut-il écrire parler ou parlé ?"
+          },
+          "assert": [
+            {
+              "type": "icontains",
+              "value": "vendre"
+            },
+            {
+              "type": "icontains",
+              "value": "vendu"
+            },
+            {
+              "type": "not-icontains",
+              "value": "je ne trouve pas cette information"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 4,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "question": "Faut-il écrire parler ou parlé ?"
+        },
+        "metadata": {
+          "sources": [
+            "infinitif-ou-participe-passe.md",
+            "imperatif.md",
+            "present-er.md"
+          ],
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 1
+      },
+      {
+        "cost": 0,
+        "gradingResult": {
+          "pass": true,
+          "score": 1,
+          "reason": "All assertions passed",
+          "namedScores": {},
+          "tokensUsed": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0
+          },
+          "componentResults": [
+            {
+              "pass": true,
+              "score": 1,
+              "reason": "Assertion passed",
+              "assertion": {
+                "type": "icontains",
+                "value": "je ne trouve pas cette information"
+              }
+            }
+          ]
+        },
+        "id": "18db9538-355e-4a0b-b06a-51f230474c9f",
+        "latencyMs": 51333,
+        "namedScores": {},
+        "prompt": {
+          "raw": "Quelle est la capitale du Canada ?",
+          "label": "{{question}}",
+          "config": {}
+        },
+        "promptId": "d3bcaf71c11c2678899be04d872718325f0916b3b0705e805ee29930663a42e2",
+        "promptIdx": 0,
+        "provider": {
+          "id": "file://app/provider_promptfoo.py",
+          "label": "assistant-v2"
+        },
+        "response": {
+          "output": "Je ne trouve pas cette information dans mes fiches.",
+          "metadata": {
+            "sources": [
+              "conditionnel-present.md",
+              "futur-anterieur.md",
+              "accord-participe-passe-avoir.md"
+            ]
+          },
+          "cached": false
+        },
+        "score": 1,
+        "success": true,
+        "testCase": {
+          "description": "d06 (sans_rapport)",
+          "vars": {
+            "question": "Quelle est la capitale du Canada ?"
+          },
+          "assert": [
+            {
+              "type": "icontains",
+              "value": "je ne trouve pas cette information"
+            }
+          ],
+          "options": {},
+          "metadata": {}
+        },
+        "testIdx": 5,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "vars": {
+          "question": "Quelle est la capitale du Canada ?"
+        },
+        "metadata": {
+          "sources": [
+            "conditionnel-present.md",
+            "futur-anterieur.md",
+            "accord-participe-passe-avoir.md"
+          ],
+          "_promptfooFileMetadata": {}
+        },
+        "failureReason": 0
+      }
+    ],
+    "stats": {
+      "successes": 4,
+      "failures": 2,
+      "errors": 0,
+      "tokenUsage": {
+        "prompt": 0,
+        "completion": 0,
+        "cached": 0,
+        "total": 0,
+        "numRequests": 6,
+        "completionDetails": {
+          "reasoning": 0,
+          "acceptedPrediction": 0,
+          "rejectedPrediction": 0,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0
+        },
+        "assertions": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          }
+        }
+      },
+      "durationMs": 597150,
+      "evaluationDurationMs": 597150
+    }
+  },
+  "config": {
+    "tags": {},
+    "description": "Assistant de grammaire : cas dev",
+    "prompts": [
+      "{{question}}"
+    ],
+    "providers": [
+      {
+        "id": "file://app/provider_promptfoo.py",
+        "label": "assistant-v2",
+        "config": {
+          "pythonExecutable": ".venv/Scripts/python.exe"
+        }
+      }
+    ],
+    "tests": [
+      {
+        "description": "d01 (conjugaison)",
+        "vars": {
+          "question": "Conjugue aller au futur simple"
+        },
+        "assert": [
+          {
+            "type": "icontains",
+            "value": "j'irai"
+          },
+          {
+            "type": "icontains",
+            "value": "tu iras"
+          },
+          {
+            "type": "icontains",
+            "value": "il ira"
+          },
+          {
+            "type": "icontains",
+            "value": "nous irons"
+          },
+          {
+            "type": "icontains",
+            "value": "vous irez"
+          },
+          {
+            "type": "icontains",
+            "value": "ils iront"
+          },
+          {
+            "type": "not-icontains",
+            "value": "je ne trouve pas cette information"
+          }
+        ]
+      },
+      {
+        "description": "d02 (regle)",
+        "vars": {
+          "question": "Comment accorder le participe passé avec avoir ?"
+        },
+        "assert": [
+          {
+            "type": "icontains",
+            "value": "cod"
+          },
+          {
+            "type": "icontains",
+            "value": "avant le verbe"
+          },
+          {
+            "type": "not-icontains",
+            "value": "je ne trouve pas cette information"
+          }
+        ]
+      },
+      {
+        "description": "d03 (regle)",
+        "vars": {
+          "question": "Quand utilise-t-on le subjonctif ?"
+        },
+        "assert": [
+          {
+            "type": "icontains",
+            "value": "il faut que"
+          },
+          {
+            "type": "not-icontains",
+            "value": "je ne trouve pas cette information"
+          }
+        ]
+      },
+      {
+        "description": "d04 (conjugaison)",
+        "vars": {
+          "question": "Écris le verbe manger à l'imparfait"
+        },
+        "assert": [
+          {
+            "type": "icontains",
+            "value": "mangeais"
+          },
+          {
+            "type": "icontains",
+            "value": "mangions"
+          },
+          {
+            "type": "not-icontains",
+            "value": "je ne trouve pas cette information"
+          }
+        ]
+      },
+      {
+        "description": "d05 (ambigu)",
+        "vars": {
+          "question": "Faut-il écrire parler ou parlé ?"
+        },
+        "assert": [
+          {
+            "type": "icontains",
+            "value": "vendre"
+          },
+          {
+            "type": "icontains",
+            "value": "vendu"
+          },
+          {
+            "type": "not-icontains",
+            "value": "je ne trouve pas cette information"
+          }
+        ]
+      },
+      {
+        "description": "d06 (sans_rapport)",
+        "vars": {
+          "question": "Quelle est la capitale du Canada ?"
+        },
+        "assert": [
+          {
+            "type": "icontains",
+            "value": "je ne trouve pas cette information"
+          }
+        ]
+      }
+    ],
+    "env": {},
+    "outputPath": [
+      "evals\\promptfoo_dev.json"
+    ],
+    "extensions": [],
+    "metadata": {},
+    "evaluateOptions": {},
+    "basePath": "C:\\Users\\Hawadiabi\\Documents\\assistant-ia-eval"
+  },
+  "shareableUrl": null,
+  "metadata": {
+    "promptfooVersion": "0.125.1",
+    "nodeVersion": "v26.13.1",
+    "platform": "win32",
+    "arch": "x64",
+    "exportedAt": "2026-11-18T03:44:53.804Z",
+    "evaluationCreatedAt": "2026-11-18T03:34:55.809Z"
+  },
+  "vars": [
+    "question"
+  ],
+  "runtimeOptions": {
+    "eventSource": "cli",
+    "showProgressBar": true,
+    "repeat": 1,
+    "maxConcurrency": 1,
+    "cache": false
+  }
+}

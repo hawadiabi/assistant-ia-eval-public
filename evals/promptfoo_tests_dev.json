@@ -1,0 +1,126 @@
+[
+  {
+    "description": "d01 (conjugaison)",
+    "vars": {
+      "question": "Conjugue aller au futur simple"
+    },
+    "assert": [
+      {
+        "type": "icontains",
+        "value": "j'irai"
+      },
+      {
+        "type": "icontains",
+        "value": "tu iras"
+      },
+      {
+        "type": "icontains",
+        "value": "il ira"
+      },
+      {
+        "type": "icontains",
+        "value": "nous irons"
+      },
+      {
+        "type": "icontains",
+        "value": "vous irez"
+      },
+      {
+        "type": "icontains",
+        "value": "ils iront"
+      },
+      {
+        "type": "not-icontains",
+        "value": "je ne trouve pas cette information"
+      }
+    ]
+  },
+  {
+    "description": "d02 (regle)",
+    "vars": {
+      "question": "Comment accorder le participe passé avec avoir ?"
+    },
+    "assert": [
+      {
+        "type": "icontains",
+        "value": "cod"
+      },
+      {
+        "type": "icontains",
+        "value": "avant le verbe"
+      },
+      {
+        "type": "not-icontains",
+        "value": "je ne trouve pas cette information"
+      }
+    ]
+  },
+  {
+    "description": "d03 (regle)",
+    "vars": {
+      "question": "Quand utilise-t-on le subjonctif ?"
+    },
+    "assert": [
+      {
+        "type": "icontains",
+        "value": "il faut que"
+      },
+      {
+        "type": "not-icontains",
+        "value": "je ne trouve pas cette information"
+      }
+    ]
+  },
+  {
+    "description": "d04 (conjugaison)",
+    "vars": {
+      "question": "Écris le verbe manger à l'imparfait"
+    },
+    "assert": [
+      {
+        "type": "icontains",
+        "value": "mangeais"
+      },
+      {
+        "type": "icontains",
+        "value": "mangions"
+      },
+      {
+        "type": "not-icontains",
+        "value": "je ne trouve pas cette information"
+      }
+    ]
+  },
+  {
+    "description": "d05 (ambigu)",
+    "vars": {
+      "question": "Faut-il écrire parler ou parlé ?"
+    },
+    "assert": [
+      {
+        "type": "icontains",
+        "value": "vendre"
+      },
+      {
+        "type": "icontains",
+        "value": "vendu"
+      },
+      {
+        "type": "not-icontains",
+        "value": "je ne trouve pas cette information"
+      }
+    ]
+  },
+  {
+    "description": "d06 (sans_rapport)",
+    "vars": {
+      "question": "Quelle est la capitale du Canada ?"
+    },
+    "assert": [
+      {
+        "type": "icontains",
+        "value": "je ne trouve pas cette information"
+      }
+    ]
+  }
+]

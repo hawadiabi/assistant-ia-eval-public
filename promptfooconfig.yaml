@@ -1,0 +1,12 @@
+description: "Assistant de grammaire : cas dev"
+
+prompts:
+  - "{{question}}"
+
+providers:
+  - id: "file://app/provider_promptfoo.py"
+    label: "assistant-v2"
+    config:
+      pythonExecutable: ".venv/Scripts/python.exe"
+
+tests: "file://evals/promptfoo_tests_dev.json"
